@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import { Window } from "react-windows-xp";
+import Icons from "./components/Icons";
+import Welcome from "./components/Welcome";
+import start from "./assets/start.png";
 
 function App() {
+  const [welcomeOpen, setWelcomeOpen] = useState(true);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <Icons />
+      </div>
+      <div>
+        {welcomeOpen && (
+          <Window
+            title={"Welcome"}
+            className="window"
+            children={<Welcome />}
+            showClose={true}
+            onClose={() => setWelcomeOpen(false)}
+          />
+        )}
+      </div>
+      <div id="start-bar">
+        <img src={start} onClick={() => setWelcomeOpen(true)} alt="start" />
+      </div>
     </div>
   );
 }
