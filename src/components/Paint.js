@@ -6,7 +6,7 @@ export default function Paint() {
         title="paint"
         style={{
           display: "block",
-          width: "100%",
+          width: "700px",
           height: "500px",
         }}
       />

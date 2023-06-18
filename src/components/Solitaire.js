@@ -6,8 +6,8 @@ export default function Solitaire() {
         title="Spider Solitaire"
         style={{
           display: "block",
-          width: "100%",
-          height: "500px",
+          width: "600px",
+          height: "375px",
         }}
       />
     </div>
