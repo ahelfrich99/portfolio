@@ -7,8 +7,7 @@ export default function Welcome() {
       <h2>Welcome to my portfolio!</h2>
       <h4>
         This website is modeled after Windows XP - the first operating system
-        that I ever used. Feel free to navigate the site using the icons on the
-        left!
+        that I ever used! You can navigate the site using the icons on the left.
       </h4>
     </div>
   );
