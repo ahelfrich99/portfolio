@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import notepad_icon from "../assets/notepad_icon.png";
 import ie from "../assets/ie.png";
 import solitaire_icon from "../assets/solitaire_icon.png";
@@ -11,15 +11,10 @@ import Paint from "./Paint";
 import "../App.css";
 
 export default function Icons() {
-  const [loadingOpen, setLoadingOpen] = useState(true);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [resumeOpen, setResumeOpen] = useState(false);
   const [paintOpen, setPaintOpen] = useState(false);
   const [solitaireOpen, setSolitaireOpen] = useState(false);
-
-  useEffect(() => {
-    
-  })
 
   return (
     <div id="icons">
