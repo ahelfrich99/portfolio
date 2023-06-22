@@ -11,9 +11,7 @@ export default function Resume() {
         src={resume}
         alt="resume"
         style={{
-          display: "block",
           maxWidth: "70%",
-          height: "auto",
         }}
       />
       <br />
