@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../assets/resume.PNG";
+import resume from "../assets/resume.png";
 import Adrianna_Helfrich_Resume from "../assets/Adrianna_Helfrich_Resume.pdf";
 import { Button } from "react-windows-xp";
 import "../App.css";
